@@ -8,7 +8,7 @@ namespace ConversorDeMoeda
 {
     public class CalculoDolar
     {
-        public static double CalculoDolar(double cotacao, double quantidade)
+        public static double CalcularDolar(double cotacao, double quantidade)
         {
             double valorDolar = cotacao * quantidade;
             double iof = 0.06;
