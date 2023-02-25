@@ -13,9 +13,9 @@ namespace ConversorDeMoeda
             Console.WriteLine("Quantos dólares você vai comprar?");
             double quantidadeDolar = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            CalculoDolar.CalcularDolar(cotacaoDolar, quantidadeDolar);
+            double resultado = CalculoDolar.CalcularDolar(cotacaoDolar, quantidadeDolar);
 
-            Console.WriteLine("Valor a ser pago em reais:" + CalculoDolar.CalcularDolar(cotacaoDolar, quantidadeDolar).ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("Valor a ser pago em reais:" + resultado.ToString("F2", CultureInfo.InvariantCulture));
         }
     }
 }
